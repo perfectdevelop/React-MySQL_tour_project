@@ -1,0 +1,51 @@
+/**
+*   @name: inputs.scss
+*   @description: Estilos de los campos de entrada de información
+*/
+button { cursor: pointer; }
+
+.btn {    
+    color: $white;
+    font-family: $Poppins;
+    padding: $paddingMedium;
+    font-weight: $weightSemi;
+    &:focus {
+        transform: scale(0.95);
+    }
+}
+
+.btn-primary { 
+    background-color: $primary; 
+    transition: background-color 300ms ease-in-out;
+    &:hover {
+        background-color: rgba($primary, 0.8);
+    }
+}
+
+.btn-secondary { background-color: $secondary; }
+
+.btn-transparent { background-color: transparent; }
+
+.home {
+    .reserve-form {
+        .btn {
+            padding: 14px 64px;
+        }
+    }
+}
+
+header {
+    .flag button {
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home {
+        .reserve-form {
+            .btn {
+                padding: 14px 64px;
+            }
+        }
+    }
+}

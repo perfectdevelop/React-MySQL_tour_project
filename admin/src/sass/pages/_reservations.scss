@@ -1,0 +1,43 @@
+
+
+.reservations, .hotels {
+
+    .options {
+        margin-bottom: $marginMedium;
+        justify-content: space-between;
+        .input-container {
+            margin-right: $marginMedium;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .options {
+            margin-bottom: $marginMedium;
+            .input-container {
+                margin: $marginNormal 0;
+                margin-right: 0;
+            }
+        }
+    }
+
+}
+
+.hotelist {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.priceslist {
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 450px;
+    align-items: center;
+    p { margin: 12px 0; }
+    .input { 
+        min-width: 70%; 
+        margin-bottom: 12px;
+    }
+    .btn {
+        margin: $marginSemi 0;
+    }
+}

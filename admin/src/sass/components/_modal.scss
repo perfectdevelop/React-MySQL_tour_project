@@ -1,0 +1,74 @@
+/**
+*   @name: modal.scss
+*   @description: Estilos para el Modal
+*/
+
+.modal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    background-color: rgba($black, 0.7);
+
+    .modal-container {
+        width: 50%;
+        border-radius: 4px;
+        position: relative;
+        background-color: $white;
+    }
+
+    .title {
+        padding: $paddingMedium;
+        background-color: $primary;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    .modal-content {
+        padding: $paddingLarge;
+    }
+
+    .close-modal {
+        top: 16px;
+        right: 24px;
+        position: absolute;
+        i { font-size: 1.2rem; }
+    }
+
+    .zone-editor {
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .modal {
+        .title {
+            h2 { font-size: 1.1rem; }
+        }
+        .modal-container {
+            width: 95%;
+        }
+        .modal-content {
+            max-height: 500px;
+            overflow-y: scroll;
+        }
+        h3 {
+            font-size: 1.2rem;
+        }
+        .close-modal {
+            z-index: 2;
+        }
+        .zone-editor {
+            justify-content: center;
+            align-items: center;
+            .btn-container {
+                margin-top: $marginMedium;
+            }
+        }
+    }
+    
+}

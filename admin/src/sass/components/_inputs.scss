@@ -1,0 +1,123 @@
+/**
+*   @name: inputs.scss
+*   @description: Estilos de los campos de entrada de información
+*/
+
+input, select, option, textarea, label { font-family: $Poppins; }
+
+.input {
+    color: $darkGray;
+    border-radius: 4px;
+    border: 2px solid $gray;
+    font-weight: $weightSemi;
+    padding: $paddingNormal 12px;
+    &:focus { border: 2px solid $primary; }
+}
+
+.input-select {
+    color: $darkGray;
+    border-radius: 4px;
+    border: 2px solid $gray;  
+    font-weight: $weightSemi;
+    background-color: transparent;
+    font-family: $Poppins;
+}
+
+.checkbox-container {
+    color: $darkGray;
+    display: block;
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: $fontSmall;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: $Poppins;
+}
+
+.checkbox-container input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+.checkmark {
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #efefef;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #efefef;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: $primary;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after { 
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 8px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    transform: rotate(45deg);
+    border-width: 0 3px 3px 0;
+}
+
+.login {
+    .input-group {
+        &:focus-within > .icon {
+            border: 2px solid $primary;
+            border-right: 0;
+        }
+        .icon { 
+            width: auto;
+            height: 40px; 
+            border-radius: 4px;
+            padding-right: 1px;
+            padding-left: 8px;
+            border: 2px solid $gray;
+            border-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            transition: all 250ms ease-in-out;
+            i { 
+                color: $primary;
+                font-size: 1.1rem; 
+            }
+        }
+        .input {
+            min-width: 224px;
+            text-align: center;
+            border-left: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            padding-left: 0;
+            transition: all 250ms ease-in-out;
+        }
+    }
+}
+
+#hotelname {
+    min-width: 250px;
+}

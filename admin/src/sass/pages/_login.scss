@@ -1,0 +1,53 @@
+/**
+*   @name: _login.scss
+*   @description: Estilos de la página de Login
+*/
+
+.login {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    .login-area {
+        width: 40%;
+        padding: $paddingLarge;
+        background-color: $white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        img {
+            width: 55%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .login {
+        .login-area {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login {
+        min-height: 100vh;
+        .login-area {
+            width: 60%;
+            padding: $paddingLarge;
+            background-color: $white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .login {
+        .login-area {
+            width: 100%;
+            img {
+                width: 70%;
+            }
+        }
+    }
+}

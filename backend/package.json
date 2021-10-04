@@ -1,0 +1,27 @@
+{
+  "name": "bestlinecancun_api",
+  "version": "1.0.0",
+  "description": "Best Line Cancún API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "api",
+    "cancun"
+  ],
+  "author": "trejocode",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6",
+    "moment": "^2.24.0",
+    "mysql2": "^1.6.5",
+    "nodemailer": "^6.6.3",
+    "openpay": "^1.0.3"
+  }
+}

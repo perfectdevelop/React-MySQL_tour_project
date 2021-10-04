@@ -1,0 +1,107 @@
+/**
+*   @name: footer.scss
+*   @description: Estilos del pie de página
+*/
+
+footer {
+    padding: 64px 0;
+    @include backgroundImage;
+    .inner-container {
+        width: 75%;
+        border-radius: 4px;
+        background-color: $white;
+    }
+    .footer {
+        padding: $paddingLarge $paddingSemi;
+        .left {
+            width: 50%;
+            .legend {
+                padding-right: $paddingLarge;
+            }
+            .icon {
+                padding: 0 $paddingNormal;
+                i {
+                    font-size: $fontRegular;
+                }
+            }
+        }
+        .right {
+            width: 50%;
+            .nav {
+                width: 50%;
+            }
+        }
+    }
+    .footer-bottom {
+        padding: $paddingMedium $paddingSemi;
+        border-radius: 0 0 4px 4px;
+        background-color: $secondary;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        .inner-container {
+            width: 85%;
+            border-radius: 4px;
+            background-color: $white;
+        }
+        .footer {
+            .left {
+                width: 40%;
+                .legend {
+                    padding-right: $paddingNormal;
+                }
+            }
+            .right {
+                width: 60%;
+                .nav {
+                    margin-left: $marginNormal;
+                    width: 50%;
+                    a {
+                        font-size: $fontTiny;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        .inner-container {
+            width: 90%;
+        }
+        .footer {
+            .left {
+                width: 100%;
+                .logo {
+                    justify-content: center;
+                }
+                .legend { padding-right: 0; text-align: center; }
+                .social {
+                    justify-content: center;
+                }
+            }
+            .right {
+                width: 100%;
+                .nav {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: $marginMedium;
+                    a {
+                        font-size: $fontTiny;
+                    }
+                }
+            }
+        }
+        .footer-bottom {
+            flex-wrap: wrap;
+            p {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

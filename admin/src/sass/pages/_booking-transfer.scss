@@ -1,0 +1,99 @@
+/**
+*   @name: booking-transfer.scss
+*   @description: Estilos del la página de selección de transfer
+*/
+
+.booking-transfer {
+    .loading-vehicles {
+        height: 300px;
+    }
+}
+
+.booking-transfer-container {
+    .left {
+        width: 65%;
+        margin-right: $marginNormal;
+    }
+    .right {
+        width: 35%;
+        margin-left: $marginNormal;
+        align-items: center;
+        top: 0;
+        position: sticky;
+        align-self: flex-start;
+        .summary {
+            width: 80%;
+            border-radius: 4px;
+            padding: $paddingMedium;
+            margin: $marginNormal 0;
+            background-color: $white;
+            border: 3px solid #ebebeb;
+        }
+        .definition {
+            padding: $paddingNormal 0;
+            border-bottom: 1px solid rgba($gray, 0.4);
+        }
+        .price {
+            border-bottom: 0;
+            margin-top: $marginNormal;
+        }
+        .btn-container {
+            margin: 0 4px;
+            width: 79.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .booking-transfer-container {
+        .left {
+            width: 70%;
+        }
+        .right {
+            width: 30%;
+            .summary {
+                width: 100%;
+            }
+            .btn-container {
+                margin: 0 4px;
+                width: 99.5%;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .booking-transfer-container {
+        flex-direction: column;
+        .left {
+            width: 100%;
+            margin-right: 0;
+        }
+        .right {
+            width: 100%;
+            margin-left: 0;
+            .summary {
+                width: 100%;
+            }
+            .btn-container {
+                width: 99.5%;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .booking-transfer-container {
+        width: 100%;
+        .right {
+            position: static;
+            .btn-container {
+                margin-bottom: $marginLarge;
+            }
+        }
+    }
+}

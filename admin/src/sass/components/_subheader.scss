@@ -1,0 +1,10 @@
+/**
+*   @name: subheader.scss
+*   @description: Estilos de los subheaders
+*/
+
+
+.sub-header {
+    padding: 48px 0;
+    @include backgroundImage;
+}

@@ -1,0 +1,38 @@
+/* Collectivos AIRPORT TO HOTEL*/
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 2 AND vehiculo = 1 AND min = 0 AND max = 0;
+
+/* Privados AIRPORT TO HOTEL */
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 2 AND vehiculo = 2 AND min = 1 AND max = 4;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 2 AND vehiculo = 2 AND min = 5 AND max = 8;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 2 AND vehiculo = 2 AND min = 9 AND max = 14;
+
+/* VIP AIRPORT TO HOTEL */
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 2 AND vehiculo = 3 AND min = 1 AND max = 4;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 2 AND vehiculo = 3 AND min = 5 AND max = 8;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 2 AND vehiculo = 3 AND min = 9 AND max = 14;
+
+
+/* Collectivos HOTEL TO AIRPORT*/
+/* CHANGE ORIGIN FROM DESTINY */
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 2 AND destino = 1 AND tipo_viaje = 2 AND vehiculo = 1 AND min = 0 AND max = 0;
+
+/* Private HOTEL TO AIRPORT*/
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 2 AND destino = 1 AND tipo_viaje = 2 AND vehiculo = 2 AND min = 1 AND max = 4;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 2 AND destino = 1 AND tipo_viaje = 2 AND vehiculo = 2 AND min = 5 AND max = 8;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 2 AND destino = 1 AND tipo_viaje = 2 AND vehiculo = 2 AND min = 9 AND max = 14;
+
+/* VIP HOTEL TO AIRPORT*/
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 2 AND destino = 1 AND tipo_viaje = 2 AND vehiculo = 3 AND min = 1 AND max = 4;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 2 AND destino = 1 AND tipo_viaje = 2 AND vehiculo = 3 AND min = 5 AND max = 8;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 2 AND destino = 1 AND tipo_viaje = 2 AND vehiculo = 3 AND min = 9 AND max = 14;
+
+/* ROUND TRIP PRIVATE */
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 1 AND vehiculo = 2 AND min = 1 AND max = 4;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 1 AND vehiculo = 2 AND min = 5 AND max = 8;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 1 AND vehiculo = 2 AND min = 9 AND max = 14;
+
+/* ROUND TRIP VIP */
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 1 AND vehiculo = 3 AND min = 1 AND max = 4;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 1 AND vehiculo = 3 AND min = 5 AND max = 8;
+SELECT id_tarifa AS idTarifa, precio, directo FROM tarifario WHERE origen = 1 AND destino = 2 AND tipo_viaje = 1 AND vehiculo = 3 AND min = 9 AND max = 14;
+

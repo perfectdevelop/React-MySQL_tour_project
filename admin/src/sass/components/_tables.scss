@@ -1,0 +1,73 @@
+
+.table {
+    min-height: 500px;
+    max-height: 580px;
+    padding: $paddingLarge;
+    background-color: $white;
+    border: 1px solid hsla(0,0%,60.4%,.25);
+
+    tr {
+        &:nth-child(even) {
+            background-color: rgba($gray, 0.05);
+        }
+    }
+
+    td {
+        font-size: 0.9rem;
+        text-align: center;        
+        padding: $paddingMedium 0;
+        font-weight: $weightRegular;
+    }    
+
+    .btn {
+        padding: $paddingNormal 12px;
+    }  
+
+}
+
+.hotels {
+    .table {
+        td {
+            text-align: left;
+        }
+        .hotel {
+            width: 60%;
+        }
+        .zone, .button {
+            width: 20%;
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table {
+        .tipo, .estado, .button { min-width: 130px; }
+        td {
+            min-width: 100px;
+            text-align: left;
+        }
+        th { text-align: left; }
+    }
+    .hotels {
+        .table {
+            td {
+                text-align: left;
+            }
+            .name {
+                width: auto;
+                min-width: 180px;
+                padding-right: $paddingMedium;
+            }
+            .zone, .button {
+                width: auto;
+                min-width: 140px;
+            }
+            .zone {
+                width: 80px;
+            }
+    
+        }
+    }
+    
+}

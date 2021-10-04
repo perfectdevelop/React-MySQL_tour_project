@@ -1,0 +1,152 @@
+/**
+*   @name: booking-transfer-checkout.scss
+*   @description: Estilos del la página de selección de transfer
+*/
+
+.booking-transfer-checkout {
+    .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgba($white, 0.85);
+    }
+    .left {
+        width: 65%;
+        margin-right: $marginNormal;
+    }
+    .form {
+        background-color: $white;
+        padding: $paddingMedium;
+        border: 3px solid #ebebeb;
+    }
+    .margin-left {
+        margin-left: $marginNormal;
+    }
+    .margin-right {
+        margin-right: $marginNormal;
+    }
+    .right {
+        width: 35%;
+        margin-left: $marginNormal;
+        align-items: center;
+        .summary {
+            width: 80%;
+            border-radius: 4px;
+            padding: $paddingMedium;
+            margin: $marginNormal 0;
+            background-color: $white;
+            border: 3px solid #ebebeb;
+        }
+        .definition {
+            padding: $paddingNormal 0;
+            border-bottom: 1px solid rgba($gray, 0.4);
+        }
+        .price {
+            border-bottom: 0;
+            margin-top: $marginNormal;
+        }
+        .terms {
+            width: 80%;
+            padding: $paddingMedium;
+        }
+        .btn-container {
+            margin: 0 4px;
+            width: 79.5%;
+        }        
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .booking-transfer-checkout {
+        .left {
+            width: 100%;
+            margin-right: 0;
+        }
+        .form {
+            background-color: $white;
+            padding: $paddingMedium;
+            border: 3px solid #ebebeb;
+        }
+        .form-section {
+            .input {
+                margin: 4px 0;
+            }
+        }
+        .right {
+            width: 100%;
+            margin-left: 0;
+            align-items: center;
+            .summary {
+                width: 100%;
+                border-radius: 4px;
+                padding: $paddingMedium;
+                margin: $marginNormal 0;
+                background-color: $white;
+                border: 3px solid #ebebeb;
+            }
+            .definition {
+                padding: $paddingNormal 0;
+                border-bottom: 1px solid rgba($gray, 0.4);
+            }
+            .price {
+                border-bottom: 0;
+                margin-top: $marginNormal;
+            }
+            .btn-container {
+                margin: 0 4px;
+                width: 79.5%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .booking-transfer-checkout {
+        .left {
+            order: 2;
+            width: 100%;
+            margin-right: 0;
+        }
+        .form {
+            background-color: $white;
+            padding: $paddingMedium;
+            border: 3px solid #ebebeb;
+        }
+        .form-section {
+            .input {
+                margin: 4px 0;
+            }
+        }
+        .margin-left { margin-left: 0; }
+        .margin-right { margin-right: 0; }
+        .right {
+            order: 1;
+            width: 100%;
+            margin-left: 0;
+            align-items: center;
+            .summary {
+                width: 100%;
+                border-radius: 4px;
+                padding: $paddingMedium;
+                margin: $marginNormal 0;
+                background-color: $white;
+                border: 3px solid #ebebeb;
+            }
+            .definition {
+                padding: $paddingNormal 0;
+                border-bottom: 1px solid rgba($gray, 0.4);
+            }
+            .price {
+                border-bottom: 0;
+                margin-top: $marginNormal;
+            }
+            .btn-container {
+                margin: 0 4px;
+                width: 79.5%;
+            }
+        }
+    }
+}

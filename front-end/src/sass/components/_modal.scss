@@ -1,0 +1,94 @@
+/**
+*   @name: modal.scss
+*   @description: Estilos para el Modal
+*/
+
+.modal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    background-color: rgba($black, 0.7);
+
+    .modal-container {
+        width: 50%;
+        border-radius: 4px;
+        position: relative;
+        background-color: $white;
+    }
+
+    .title {
+        padding: $paddingMedium;
+        background-color: $primary;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    .modal-content {
+        padding: $paddingLarge;
+    }
+
+    .dates {
+        justify-content: center;
+        .date-arrival {
+            padding-right: $paddingLarge;
+        } 
+        .date-depature {
+            padding-left: $paddingMedium;
+        }
+    }
+
+    .btn-container {
+        .btn {
+            padding: $paddingMedium 64px;
+        }
+    }
+
+    .basic {
+        justify-content: space-between;
+    }
+
+    .close-modal {
+        top: 24px;
+        right: 24px;
+        position: absolute;
+        i { font-size: 1.2rem; }
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .modal {
+        .title {
+            h2 { font-size: 1.2rem; }
+        }
+        .white-space-32 { height: 16px; }
+        .modal-container {
+            width: 95%;
+        }
+        .modal-content {
+            max-height: 500px;
+            overflow-y: scroll;
+            padding: $paddingMedium;
+        }
+        h3 { font-size: 1.2rem; }
+        p { padding: $paddingNormal 0; }
+        .dates {
+            .date-arrival {
+                p { text-align: center;}
+                padding-right: 0;
+            } 
+            .date-depature {
+                p { text-align: center;}
+                padding-right: 0;
+            }
+        }
+        .close-modal {
+            top: 20px;
+            z-index: 2;
+        }
+    }
+    
+}

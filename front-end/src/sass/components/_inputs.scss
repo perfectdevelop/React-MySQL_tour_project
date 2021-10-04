@@ -1,0 +1,142 @@
+/**
+*   @name: inputs.scss
+*   @description: Estilos de los campos de entrada de información
+*/
+
+input, select, option, textarea, label { font-family: $Poppins; }
+
+.input {
+    color: $darkGray;
+    border-radius: 4px;
+    border: 2px solid $gray;
+    font-weight: $weightSemi;
+    padding: $paddingNormal 12px;    
+    &:focus { border: 2px solid $primary; }
+}
+
+.input-select {
+    color: $darkGray;
+    border-radius: 4px;
+    border: 2px solid $gray;  
+    font-weight: $weightSemi;
+    background-color: transparent;
+    font-family: $Poppins;
+}
+
+.checkbox-container {
+    color: $darkGray;
+    display: block;
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: $fontSmall;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: $Poppins;
+}
+
+.checkbox-container input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+.checkmark {
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #efefef;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #efefef;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: $primary;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after { 
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 8px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    transform: rotate(45deg);
+    border-width: 0 3px 3px 0;
+}
+
+.home {
+    .type .input-select {
+        padding: $paddingNormal 12px;
+    }
+    .input-group {
+        min-width: 16.6%;
+    }
+    .input-select-wrapper {
+        width: 90%;
+    }
+    .input-select-component__control {
+        border: none;
+        outline: none;
+        &:hover {
+            box-shadow: none;
+        }        
+    }
+    .input-select-component__single-value {
+        font-size: $fontMini;
+    }
+    .input-select-component__placeholder {
+        color: $darkGray;
+        font-size: $fontMini;
+        font-family: $Poppins;
+    }
+    .input-select-component__option {
+        font-size: $fontMini;
+        font-family: $Poppins;
+    }    
+    .input, .input-picker, .input-select {
+        width: 90%;
+    }
+    .input-picker {
+        color: $darkGray;
+        border-radius: 4px;
+        border: 2px solid $gray;  
+        font-weight: $weightSemi;
+        padding: $paddingNormal 12px;
+    }
+}
+
+.booking-transfer-checkout {
+    .input {
+        border: 2px solid rgba($gray, 0.5); 
+        font-weight: $weightMedium;
+        &:focus { border: 2px solid $primary; }
+    }
+
+    .react-datepicker__time-list-item {
+        height: auto !important;
+    }
+    
+    .react-datepicker-wrapper, .react-datepicker__input-container {
+        width: 100%;
+    }
+}

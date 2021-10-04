@@ -1,0 +1,40 @@
+/**
+*   @name: about.scss
+*   @description: Estilos del la página de nosotros y contacto
+*/
+
+.about {
+    .left {
+        width: 50%;
+        margin-right: $marginSemi;
+    }
+    .right {
+        width: 50%;
+        margin-left: $marginSemi;
+    }
+    .mr {
+        margin-right: $marginMedium;
+    }
+    .ml {
+        margin-left: $marginMedium;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        .left {
+            width: 100%;
+            margin-right: 0;
+        }
+        .right {
+            width: 100%;
+            margin-left: 0;
+        }
+        .mr {
+            margin-right: 0;
+        }
+        .ml {
+            margin-left: 0;
+        }
+    }
+}

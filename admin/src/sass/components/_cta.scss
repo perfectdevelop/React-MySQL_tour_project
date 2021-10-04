@@ -1,0 +1,28 @@
+/**
+*   @name: cta.scss
+*   @description: Estilos de los componentes de CTA
+*/
+
+.cta-suscribe  {
+    padding: $paddingLarge 0;
+    background-color: $secondary;
+}
+
+@media screen and (max-width: 1024px) {
+    .cta-suscribe  {
+        h3 {
+            font-size: 1.2rem;
+            margin-right: $marginNormal;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cta-suscribe  {
+        h3 {
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 12px;
+        }
+    }
+}
